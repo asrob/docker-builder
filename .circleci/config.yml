@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    machine:
+      docker_layer_caching: false
+    steps:
+      - checkout
+      - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run: docker build -t asrob/builder:latest .
+      - run: docker push asrob/builder:latest
