@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV TZ=Europe/Budapest LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 ARG DEBIAN_FRONTEND=noninteractive
-ARG PACKAGEVERSION=7.2.14-1+ubuntu18.04.1+deb.sury.org+1
+ARG PACKAGEVERSION=7.3.1-1+ubuntu18.04.1+deb.sury.org+1
 
 RUN apt-get update -y \
   && apt-get dist-upgrade -y \
@@ -17,21 +17,21 @@ RUN apt-get update -y \
   && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
   && apt-get install -y --no-install-recommends \
     nodejs \
-    php7.2-bcmath=$PACKAGEVERSION \
-    php7.2-bz2=$PACKAGEVERSION \
-    php7.2-common=$PACKAGEVERSION \
-    php7.2-cli=$PACKAGEVERSION \
-    php7.2-curl=$PACKAGEVERSION \
-    php7.2-gd=$PACKAGEVERSION \
-    php7.2-gmp=$PACKAGEVERSION \
-    php7.2-imap=$PACKAGEVERSION \
-    php7.2-intl=$PACKAGEVERSION \
-    php7.2-mbstring=$PACKAGEVERSION \
-    php7.2-mysql=$PACKAGEVERSION \
-    php7.2-soap=$PACKAGEVERSION \
-    php7.2-xmlrpc=$PACKAGEVERSION \
-    php7.2-xsl=$PACKAGEVERSION \
-    php7.2-zip=$PACKAGEVERSION \
+    php7.3-bcmath=$PACKAGEVERSION \
+    php7.3-bz2=$PACKAGEVERSION \
+    php7.3-common=$PACKAGEVERSION \
+    php7.3-cli=$PACKAGEVERSION \
+    php7.3-curl=$PACKAGEVERSION \
+    php7.3-gd=$PACKAGEVERSION \
+    php7.3-gmp=$PACKAGEVERSION \
+    php7.3-imap=$PACKAGEVERSION \
+    php7.3-intl=$PACKAGEVERSION \
+    php7.3-mbstring=$PACKAGEVERSION \
+    php7.3-mysql=$PACKAGEVERSION \
+    php7.3-soap=$PACKAGEVERSION \
+    php7.3-xmlrpc=$PACKAGEVERSION \
+    php7.3-xsl=$PACKAGEVERSION \
+    php7.3-zip=$PACKAGEVERSION \
     php-mongodb \
     php-redis \
     unzip \
